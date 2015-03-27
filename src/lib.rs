@@ -1,3 +1,4 @@
 #[test]
-fn it_works() {
+fn prime_factors_of_two() {
+    assert_eq!(prime_factors(2), [2]);
 }
