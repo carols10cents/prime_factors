@@ -1,5 +1,5 @@
 #[allow(dead_code)]
-fn prime_factors(num: i64) {
+fn prime_factors(num: i64) -> Vec<i64> {
 }
 
 #[test]
