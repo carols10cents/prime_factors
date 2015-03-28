@@ -55,3 +55,13 @@ fn prime_factors_of_eight() {
 fn prime_factors_of_nine() {
     assert_eq!(prime_factors(9), [3, 3]);
 }
+
+#[test]
+fn prime_factors_of_48() {
+    assert_eq!(prime_factors(48), [2, 2, 2, 2, 3]);
+}
+
+#[test]
+fn prime_factors_of_101() {
+    assert_eq!(prime_factors(101), [101]);
+}
