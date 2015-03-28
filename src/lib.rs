@@ -21,3 +21,8 @@ fn prime_factors_of_three() {
 fn prime_factors_of_four() {
     assert_eq!(prime_factors(4), [2, 2]);
 }
+
+#[test]
+fn prime_factors_of_five() {
+    assert_eq!(prime_factors(5), [5]);
+}
