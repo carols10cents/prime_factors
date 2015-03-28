@@ -1,6 +1,10 @@
 #[allow(dead_code)]
 fn prime_factors(num: i64) -> Vec<i64> {
-    vec![num]
+    if num % 2 == 0 && num > 2 {
+        vec![2] + &prime_factors(num / 2)
+    } else {
+        vec![num]
+    }
 }
 
 #[test]
