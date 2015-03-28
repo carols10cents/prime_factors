@@ -2,14 +2,11 @@
 fn prime_factors(mut num: i64) -> Vec<i64> {
     let mut result = vec![];
     while num != 1 {
-        let mut i = 2;
-        while i <= num {
+        for i in 2..num + 1 {
             if num % i == 0 {
                 result.push(i);
                 num = num / i;
                 break;
-            } else {
-                i += 1;
             }
         }
     }
