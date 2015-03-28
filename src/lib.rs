@@ -1,14 +1,13 @@
 #[allow(dead_code)]
 fn prime_factors(mut num: i64) -> Vec<i64> {
     let mut result = vec![];
-    while num != 1 {
-        for i in 2..num + 1 {
-            if num % i == 0 {
-                result.push(i);
-                num = num / i;
-                break;
-            }
+    let mut i = 2;
+    while num > 1 {
+        while num % i == 0 {
+            result.push(i);
+            num /= i;
         }
+        i += 1;
     }
     result
 }
