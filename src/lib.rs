@@ -31,3 +31,13 @@ fn prime_factors_of_five() {
 fn prime_factors_of_six() {
     assert_eq!(prime_factors(6), [2, 3]);
 }
+
+#[test]
+fn prime_factors_of_seven() {
+    assert_eq!(prime_factors(7), [7]);
+}
+
+#[test]
+fn prime_factors_of_eight() {
+    assert_eq!(prime_factors(8), [2, 2, 2]);
+}
