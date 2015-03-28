@@ -1,6 +1,6 @@
 #[allow(dead_code)]
 fn prime_factors(num: i64) -> Vec<i64> {
-    vec![2]
+    vec![num]
 }
 
 #[test]
