@@ -41,3 +41,8 @@ fn prime_factors_of_seven() {
 fn prime_factors_of_eight() {
     assert_eq!(prime_factors(8), [2, 2, 2]);
 }
+
+#[test]
+fn prime_factors_of_nine() {
+    assert_eq!(prime_factors(9), [3, 3]);
+}
